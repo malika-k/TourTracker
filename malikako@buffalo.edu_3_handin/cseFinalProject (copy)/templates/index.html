@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{url_for('static', filename='front.js')}}"></script>
+    <link href="{{url_for('static', filename='styles.css')}}" rel='stylesheet'>
+
+</head>
+
+<body>
+    <div id = "head">
+            <h1> The Tour Tracker </h1> 
+            <h4>*For ALL Your Fanboy/Fangirl Needs*</h4>
+        <div class="center">
+                <input type="text" id="bandname" class="search" placeholder="Enter Artist Name">
+                <button onclick="test();">Search</button>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <table style="width:100%;">
+            <tr class="graph">
+                    <th id="test" style="width:60%; background-color: royalblue"></th>
+                    <th id="pie" style="width:20%; background-color: white"></th>
+            </tr>
+    </table>
+
+</body>
+
+</html>
